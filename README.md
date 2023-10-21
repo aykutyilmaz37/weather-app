@@ -20,4 +20,4 @@ Weather App Uygulamasi
 - **npm run start** ya da **yarn start**
 
 #### Demo
-https://react-weather-app.netlify.app/
+https://react-weather-app-aykut.netlify.app/
