@@ -32,6 +32,11 @@ const useGeoLocation = () => {
   };
 
   const error = () => {
+    setData({
+      resp: null,
+      loading: false,
+      error: 'Geolocation not supported',
+    });
     console.log('Unable to retrieve your location');
   };
 
@@ -39,7 +44,7 @@ const useGeoLocation = () => {
     getLocation();
   }, []);
 
-  return [data.resp, data.loading];
+  return [data.resp, data.loading,data.error];
 };
 
 export default useGeoLocation;
